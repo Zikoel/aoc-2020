@@ -1,4 +1,4 @@
-module advent-2020
+module aoc-2020
 
 go 1.14
 

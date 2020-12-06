@@ -1,14 +1,14 @@
 package main
 
 import (
-	"advent-2020/days/day01"
-	"advent-2020/days/day01e02"
-	"advent-2020/days/day02"
-	"advent-2020/days/day02e02"
-	"advent-2020/days/day03"
-	"advent-2020/days/day03e02"
-	"advent-2020/days/day04e02"
-	"advent-2020/days/day05"
+	"aoc-2020/days/day01"
+	"aoc-2020/days/day01e02"
+	"aoc-2020/days/day02"
+	"aoc-2020/days/day02e02"
+	"aoc-2020/days/day03"
+	"aoc-2020/days/day03e02"
+	"aoc-2020/days/day04e02"
+	"aoc-2020/days/day05"
 	"flag"
 	"fmt"
 	"io/ioutil"

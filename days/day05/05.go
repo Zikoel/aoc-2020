@@ -1,7 +1,7 @@
 package day05
 
 import (
-	"advent-2020/pkg/utils"
+	"aoc-2020/pkg/utils"
 	"fmt"
 	"sort"
 	"strings"
