@@ -47,31 +47,31 @@ func main() {
 	switch day {
 	case "01":
 		day01.Run(data)
-	case "01-02":
+	case "01e02":
 		day01e02.Run(data)
 	case "02":
 		day02.Run(data)
-	case "02-02":
+	case "02e02":
 		day02e02.Run(data)
 	case "03":
 		day03.Run(data)
-	case "03-02":
+	case "03e02":
 		day03e02.Run(data)
 	case "04":
 		fmt.Println("To be restored")
-	case "04-02":
+	case "04e02":
 		day04e02.Run(data)
 	case "05":
 		day05.Run(data)
-	case "05-02":
+	case "05e02":
 		day05e02.Run(data)
 	case "06":
 		day06.Run(data)
-	case "06-02":
+	case "06e02":
 		day06e02.Run(data)
 	case "07":
 		day07.Run(data)
-	case "07-02":
+	case "07e02":
 		day07e02.Run(data)
 	case "08":
 		day08.Run(data)
