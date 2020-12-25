@@ -37,3 +37,48 @@ func RemoveDuplicate(slice string) string {
 	}
 	return result
 }
+
+// ListContains check if list contains the value val
+func ListContains(list []int, val int) bool {
+	for _, v := range list {
+		if v == val {
+			return true
+		}
+	}
+
+	return false
+}
+
+// ListElementsSum sum all element of a list
+func ListElementsSum(list []int) int {
+	result := 0
+	for _, val := range list {
+		result += val
+	}
+
+	return result
+}
+
+// ListMax return the max value contained on the list
+func ListMax(list []int) int {
+	result := list[0]
+	for _, val := range list {
+		if val > result {
+			result = val
+		}
+	}
+
+	return result
+}
+
+// ListMin return the min value contained on the list
+func ListMin(list []int) int {
+	result := list[0]
+	for _, val := range list {
+		if val < result {
+			result = val
+		}
+	}
+
+	return result
+}
