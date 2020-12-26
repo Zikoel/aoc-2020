@@ -82,3 +82,29 @@ func ListMin(list []int) int {
 
 	return result
 }
+
+// ListRemoveVal Remove all occurrence of val from list
+func ListRemoveVal(list []int, val int) []int {
+	result := []int{}
+	for _, v := range list {
+		if v == val {
+			continue
+		}
+
+		result = append(result, v)
+	}
+
+	return result
+}
+
+// ListCount Count the occurence of specified val
+func ListCount(list []int, val int) int {
+	result := 0
+	for _, v := range list {
+		if v == val {
+			result++
+		}
+	}
+
+	return result
+}

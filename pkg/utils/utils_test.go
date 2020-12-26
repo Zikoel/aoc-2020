@@ -37,3 +37,11 @@ func TestListContains(t *testing.T) {
 	result = ListContains([]int{4, 5}, 10)
 	assert.False(result)
 }
+
+func TestListRemoveVal(t *testing.T) {
+	assert := assert.New(t)
+
+	result := ListRemoveVal([]int{4, 5}, 4)
+	assert.Len(result, 1)
+	assert.False(ListContains(result, 4))
+}
