@@ -97,6 +97,20 @@ func ListRemoveVal(list []int, val int) []int {
 	return result
 }
 
+// ListRemoveValsList Remove all occurrence of vals from list
+func ListRemoveValsList(list, vals []int) []int {
+	result := []int{}
+	for _, v := range list {
+		if ListContains(vals, v) {
+			continue
+		}
+
+		result = append(result, v)
+	}
+
+	return result
+}
+
 // ListCount Count the occurence of specified val
 func ListCount(list []int, val int) int {
 	result := 0
