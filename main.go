@@ -19,6 +19,7 @@ import (
 	"aoc-2020/days/day09"
 	"aoc-2020/days/day09e02"
 	"aoc-2020/days/day10"
+	"aoc-2020/days/day10e02"
 	"flag"
 	"fmt"
 	"io/ioutil"
@@ -84,6 +85,8 @@ func main() {
 		day09e02.Run(data)
 	case "10":
 		day10.Run(data)
+	case "10e02":
+		day10e02.Run(data)
 	default:
 		fmt.Println("Day not present")
 	}
