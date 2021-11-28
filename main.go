@@ -21,6 +21,7 @@ import (
 	"aoc-2020/days/day10"
 	"aoc-2020/days/day10e02"
 	"aoc-2020/days/day11"
+	"aoc-2020/days/day11e02"
 	"flag"
 	"fmt"
 	"io/ioutil"
@@ -30,9 +31,12 @@ import (
 
 func main() {
 	var day string = ""
+	var file string = ""
 
 	flag.StringVar(&day, "day", "", "day to run")
 	flag.StringVar(&day, "d", "", "day to run (shorthand)")
+	flag.StringVar(&file, "file", "", "file to  read input from")
+	flag.StringVar(&file, "f", "", "file to  read input from (shorthand)")
 
 	flag.Parse()
 
@@ -41,7 +45,13 @@ func main() {
 		os.Exit(1)
 	}
 
-	data, err := ioutil.ReadAll(os.Stdin)
+	var data []byte
+	var err error
+	if file == "" {
+		data, err = ioutil.ReadAll(os.Stdin)
+	} else if file != "" {
+		data, err = ioutil.ReadFile(file)
+	}
 
 	if err != nil {
 		log.Fatal("Impossible read input")
@@ -90,6 +100,8 @@ func main() {
 		day10e02.Run(data)
 	case "11":
 		day11.Run(data)
+	case "11e02":
+		day11e02.Run(data)
 	default:
 		fmt.Println("Day not present")
 	}
