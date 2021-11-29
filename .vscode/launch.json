@@ -9,9 +9,9 @@
       "type": "go",
       "request": "launch",
       "mode": "debug",
-      "program": "${fileDirname}",
+      "program": "${workspaceFolder}/main.go",
       "showLog": true,
-      "args": ["-d", "11e02", "-f", "./input"]
+      "args": ["-d", "12e02", "-f", "./input"]
     },
     {
       "name": "Test with debug",
